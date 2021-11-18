@@ -12,14 +12,15 @@ class Cohort(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
 
 
-class Native(models.Model):
-    cohort = models.ForeignKey(Cohort, on_delete=models.CASCADE)
-    native_id = models.CharField(max_length=20)
-    email = models.EmailField(unique=True)
-    username = models.CharField(max_length=30)
-    password = models.CharField(max_length=225)
-    phone_number = models.CharField(max_length=20)
-    image = models.ImageField(upload_to='images')
-    date_created = models.DateTimeField(auto_now_add=True)
-
+#
+# class Native(models.Model):
+#     cohort = models.ForeignKey(Cohort, on_delete=models.CASCADE)
+#     native_id = models.CharField(max_length=20)
+#     email = models.EmailField(unique=True)
+#     username = models.CharField(max_length=30)
+#     password = models.CharField(max_length=225)
+#     phone_number = models.CharField(max_length=20)
+#     image = models.ImageField(upload_to='images')
+#     date_created = models.DateTimeField(auto_now_add=True)
+#
 
